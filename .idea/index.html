@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>WebSite</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+        <div class="container">
+            <h1>Enter Age</h1>
+            <input id="input1" type="text" /><button onclick="btn()">Enter</button>
+            <p id="message"></p>
+            <script>
+                function btn() {
+                    var text1;
+                    var a = Boolean(true);
+                    var b =Boolean(false);
+                    var Eva = document.getElementById("input1").value;
+                    switch (Eva){
+                        case "13":
+                        case "14":
+                        case "15":
+                        case "16":
+                        case "17":
+                        case "18": a;
+                            text1 = "The age is between 13 and 18" + " " + a;
+                            break;
+                        default: b;
+                            text1="This is not a age between 13 and 18" + " " + b;
+
+                    }
+                    document.getElementById("message").innerHTML = text1;
+
+                }
+            </script>
+
+        </div>
+<body>
+
+</body>
+</html>
